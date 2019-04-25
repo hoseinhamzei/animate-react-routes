@@ -1,0 +1,104 @@
+/*-------- TRANSITIONS ---------*/
+
+/*- fade in */
+
+.fadein-enter {
+    opacity: 0.01;
+  }
+  
+  .fadein-enter.fadein-enter-active {
+    opacity: 1;
+    transition: opacity 500ms ease-in;
+  }
+  
+  .fadein-leave {
+    opacity: 1;
+  }
+  
+  .fadein-leave.fadein-leave-active {
+    opacity: 0.01;
+    transition: opacity 500ms ease-in;
+  }
+
+  .fadein-appear {
+    opacity: 0.01;
+  }
+  
+  .fadein-appear.fadein-appear-active {
+    opacity: 1;
+    transition: opacity 500ms ease-in;
+  }
+
+/*- fade in down */
+
+.fadeInDown-enter {
+    opacity: 0.01;
+    transform: translateY(-30%);
+  }
+  
+  .fadeInDown-enter.fadeInDown-enter-active {
+    opacity: 1;
+    transition: all 500ms ease;
+    transform: translateY(0%);
+  }
+  
+  .fadeInDown-leave {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  
+  .fadeInDown-leave.fadeInDown-leave-active {
+    opacity: 0.01;
+    transition: all 500ms ease;
+    transform: translateY(-30%);
+  }
+
+  .fadeInDown-appear {
+    opacity: 0.01;
+    transform: translateY(-30%);
+  }
+  
+  .fadeInDown-appear.fadeInDown-appear-active {
+    opacity: 1;
+    transition: all 500ms ease;
+    transform: translateY(0%);
+  }
+
+
+
+
+  /*/////////////////////////*/
+
+  .container{
+      display: flex;
+      padding: 15px;
+      font-family: sans-serif;
+  }
+
+  .links a{
+    display: block;
+    font-size: 18px;
+    margin-top: 10px;
+  }
+
+  .routes{
+      margin-left: 25%;
+      width:25%;
+  }
+
+  .route{
+      padding: 15px;
+      height: 500px;
+      color: white;
+      text-align: center;
+  }
+
+  .one{
+      background: tomato;
+  }
+
+  .two{
+      background: slateblue;
+  }
+
+
